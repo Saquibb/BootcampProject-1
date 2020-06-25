@@ -9,11 +9,13 @@ export const AddTransaction = () => {
       <form>
         <div className='form-control'>
           <label htmlfor='description'>Description</label>
-          <input type='text'  
-          id="description"
-           value=(description) 
-           onChange={(e) => setDescription(e.target.value)}
-           placeholder='Detail of Transaction' />
+          <input
+            type='text'
+            id='description'
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder='Detail of Transaction'
+          />
         </div>
         <div className='form-control'>
           <label htmlFor='transactionamount'>transactionamount</label>
