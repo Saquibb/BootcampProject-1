@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
-
 import { GlobalContext } from '../context/GlobalState';
 
 export const Balance = () => {
   const { transactions } = useContext(GlobalContext);
-
   const transactionAmounts = transactions.map(
     (transaction) => transaction.transactionAmount
   );
@@ -13,7 +11,7 @@ export const Balance = () => {
     .toFixed(2);
   return (
     <div>
-      <h4>Current Balance</h4>
+      <h3>Current Balance</h3>
       <h1 id='balance'>{balance}</h1>
     </div>
   );
